@@ -15,6 +15,7 @@ header h1 {
     letter-spacing: 2pt;
     border-bottom: 1px solid black;
     margin-bottom: 4px;
+    text-align:center;
 }
 
 header span {
@@ -25,6 +26,7 @@ header span {
 section h2 {
     font-family: "Futura", serif;
     font-size: 14pt;
+    font-weight: normal;
 }
 
 section p {
@@ -99,6 +101,6 @@ section ul {
     page-break-before: always;
 }
 
-.section-header {
-    font-color: red;
+.sectionHeader {
+    font-style: bold;
 }
