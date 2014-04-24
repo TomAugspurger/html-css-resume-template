@@ -1,11 +1,12 @@
 body {
     margin: 40px;
-    font-family: "Adobe Caslon Pro", "Minion Pro", serif;
+    font-family: "Avenir", sans-serif;
     font-size: 12pt;
+    max-width: 800px;
 }
 
 header {
-    font-family: "Trajan Pro", serif;
+    font-family: "Futura", serif;
     padding-bottom: 10px;
 }
 
@@ -22,7 +23,7 @@ header span {
 }
 
 section h2 {
-    font-family: "Trajan Pro", serif;
+    font-family: "Futura", serif;
     font-size: 14pt;
 }
 
@@ -70,7 +71,7 @@ section ul {
     display: table-row;
 }
 
-.jobtitle {
+.jobtitle .degreetitle{
     display: table-cell;
     font-style: italic;
 }
@@ -96,4 +97,8 @@ section ul {
 
 .pagebreak {
     page-break-before: always;
+}
+
+.section-header {
+    font-color: red;
 }
