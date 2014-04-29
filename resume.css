@@ -1,21 +1,17 @@
 body {
     margin: 40px;
-    font-family: "Avenir", sans-serif;
+    font-family: "Avenir", serif;
     font-size: 12pt;
     max-width: 800px;
 }
 
 header {
-    font-family: "Futura", serif;
-    padding-bottom: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 }
 
 header h1 {
     font-size: 20pt;
     letter-spacing: 2pt;
-    border-bottom: 1px solid black;
-    margin-bottom: 4px;
-    text-align:center;
 }
 
 header span {
@@ -29,20 +25,23 @@ section h2 {
     font-weight: normal;
 }
 
-section p {
-    margin-left: 40px;
-}
-
-section.coverletter {
-    margin-top: 40px;
-}
-
-section.coverletter p {
-    margin-left: 0px;
-}
-
 section ul {
     list-style-type: circle;
+}
+
+#name {
+    font-variant: small-caps;
+    font-weight: lighter;
+    margin-bottom: -.4em;
+    text-align:center;
+}
+
+#info {
+    font-family: "Avenir", sans-serif;
+    font-weight: 200;
+    font-size:.75em;
+    /*font-variant: small-caps;*/
+    text-align: center;
 }
 
 .jobtable {
@@ -56,6 +55,7 @@ section ul {
     display: table;
     width: 100%;
     margin-left: 20px;
+    margin-right: 20px;
     padding-bottom: 15px;
 }
 
@@ -101,6 +101,45 @@ section ul {
     page-break-before: always;
 }
 
-.sectionHeader {
-    font-style: bold;
+/*Each item (education, employment, skills, etc)
+has 3 stylings
+
+1. itemheader (e.g. education)
+2. itemname (e.g. UNI)
+3. iteminfo
+
+*/
+
+.itemheader {
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: .9em;
 }
+
+.itemname{
+    /*TODO: get item name (uni, job title) flush with sectionheader*/
+    margin-top: -.5em;
+}
+
+.iteminfo{
+    font-size: .9em;
+    font-weight: lighter;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 90%;
+    max-width: 90%;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/*.jobtitle {
+    
+}
+*/
