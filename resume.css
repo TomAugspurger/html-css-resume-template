@@ -3,10 +3,13 @@ body {
     font-family: "Avenir", serif;
     font-size: 12pt;
     max-width: 800px;
+    line-height: .9;
 }
 
 header {
     font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+    margin-top: -2em;
+    padding: 0em;
 }
 
 header h1 {
@@ -26,7 +29,13 @@ section h2 {
 }
 
 section ul {
+    margin-top: -.5em;
     margin-left: -1.5em;
+    /*line-height: .5;*/
+}
+
+section li {
+    margin-top: -.5em;
 }
 
 #name {
@@ -42,64 +51,18 @@ section ul {
     font-size:.75em;
     /*font-variant: small-caps;*/
     text-align: center;
+    line-height: 1;
 }
 
-.jobtable {
-    display: table;
-    width: 100%;
-    border-bottom: 1px solid black;
-    margin-left: 20px;
-}
-
-.edtable {
-    display: table;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 15px;
-}
-
-.skillstable {
-    display: table;
-    width: 100%;
-}
-
-.table {
-    display: table;
-    margin-left: 20px;
-}
-
-.tablerow {
-    display: table-row;
-}
-
-.jobtitle .degreetitle{
-    display: table-cell;
+.jobtitle{
     font-style: italic;
+    margin-top: -.5em;
 }
 
 .right {
-    display: table-cell;
-    text-align: right;
+    float: right;
 }
 
-.cell {
-    display: table-cell;
-}
-
-.onlinecell {
-    font-style: italic;
-    padding-right: 10px;
-}
-
-.urlcell {
-    display: table-cell;
-    letter-spacing: 1px;
-}
-
-.pagebreak {
-    page-break-before: always;
-}
 
 /*Each item (education, employment, skills, etc)
 has 3 stylings
@@ -110,10 +73,6 @@ has 3 stylings
 
 */
 
-.item {
-    line-height: 80%;
-}
-
 .itemheader {
     font-weight: bolder;
     font-variant: small-caps;
@@ -121,8 +80,8 @@ has 3 stylings
     margin-top: -.25em;
 }
 
-.itemname{    
-    margin-top: -.1em;
+.itemname{
+    margin-top: -.25em;
     font-family: "Baskerville", serif;
     font-size: 1.5em;
 }
@@ -132,7 +91,6 @@ has 3 stylings
     font-weight: lighter;
     font-style: normal;
     font-variant: normal;
-    /*line-height: 50%;*/
     max-width: 90%;
 }
 
@@ -140,11 +98,6 @@ has 3 stylings
     text-align: left;
 }
 
-.right {
-    float: right;
-}
-
-
 .jobtitle {
-    font-style: italic;   
+    font-style: italic;
 }
